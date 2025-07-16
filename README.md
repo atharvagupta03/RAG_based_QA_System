@@ -71,13 +71,13 @@ drive.mount('/content/drive')
 
 ### Step 3: Install Dependencies
 
-!pip install --upgrade langchain langchain-community ctransformers
-!pip install langchain
-!pip install ctransformers
-!pip install ctransformers[cuda]
-!pip install langchain-community
-!pip install -U sentence-transformers
-!huggingface-cli login
+- !pip install --upgrade langchain langchain-community ctransformers
+- !pip install langchain
+- !pip install ctransformers
+- !pip install ctransformers[cuda]
+- !pip install langchain-community
+- !pip install -U sentence-transformers
+- !huggingface-cli login
 
 Make sure to have necessary data files. You can change the dataset and use the RAG System according to your needs. 
 
