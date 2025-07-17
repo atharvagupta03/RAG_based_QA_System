@@ -33,7 +33,7 @@ class RAG :
       def __init__(self) :
             # Embedding model initialization
             from sentence_transformers import SentenceTransformer
-            self.model_1_sentence_bert =  SentenceTransformer("nomic-ai/nomic-embed-text-v1", trust_remote_code=True)
+            self.model_1_sentence_bert =  SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
 
             # Mistral_model_initialization
             os.environ['XDG_CACHE_HOME'] = 'drive/MyDrive/LLM_data/model_mistral/cache/'
