@@ -85,7 +85,7 @@ class RAG :
       def generate_answer(self,query):
             query_embedding = self.perform_query_embedding(query)
             most_similar_chunk = self.finding_most_similar_chunk(query_embedding)
-            self.response = self.model_2_mistral_LLM(f"[INST] You are an agent who answers questions about preferences of a person. Based on the information provided below about a personality in INFO, you need to answer question given in QUESTION . Restrict your knowledge by using only the information provided below. INFO: {most_similar_chunk}   Dont go beyond this information provided. QUESTION : {query} [/INST]")
+            self.response = self.model_2_mistral_LLM(f"[INST] You are a Question Answering Agent based on the topic 'Fraud' You need to answer from the given text data for the mentioned question. Help with the solution as well and Restrict your knowledge by using only the information provided below. INFO: {most_similar_chunk}   Dont go beyond this information provided. QUESTION : {query} [/INST]")
             print(" \n ")
             print("User Question : " + str(query))
             print("Generated Answer : " + str(self.response))
